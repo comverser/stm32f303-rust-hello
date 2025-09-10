@@ -1,5 +1,5 @@
 [package]
-name = "hello_world_001"
+name = "stm32f303-rust-hello"
 version = "0.1.0"
 edition = "2024"
 
