@@ -2,17 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug with ST-Link",
             "cwd": "${workspaceFolder}",
             "executable": "${workspaceFolder}/target/thumbv7em-none-eabihf/debug/stm32f303-rust-hello",
-            "name": "Debug with ST-Link",
             "request": "launch",
             "type": "cortex-debug",
             "runToEntryPoint": "main",
-            "showDevDebugOutput": "raw",
             "servertype": "stlink",
-            "svdPath": "/opt/st/stm32cubeclt_1.19.0/STMicroelectronics_CMSIS_SVD/STM32F303.svd",
+            "svdFile": "C:\\ST\\STM32CubeCLT_1.19.0\\STMicroelectronics_CMSIS_SVD\\STM32F303.svd",
             "device": "STM32F303",
-            "preLaunchTask": "rust: cargo build[MCU]"
+            "preLaunchTask": "rust: cargo build[MCU]",
+            "showDevDebugOutput": "raw"
         }
     ]
 }
